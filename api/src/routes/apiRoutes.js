@@ -22,10 +22,10 @@ const ingressoController = require("../controllers/ingressoController");
 
 //rotas eventoController
 router.post("/evento", eventoController.createEvento);
-router.get("/evento", eventoController.getAllEventos);
+router.get("/evento", veriyfyJWT, eventoController.getAllEventos);
 router.put("/evento", eventoController.updateEvento);
 router.delete("/evento/:id", eventoController.deleteEvento);
-router.get("/evento/data", eventoController.getEventosPorData);
+router.get("/evento/data", veriyfyJWT, eventoController.getEventosPorData);
 router.get("/evento/proximo", eventoController.getEventosdia);
 
 //rotas ingressoController
