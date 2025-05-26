@@ -22,7 +22,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: vio_gabriel
-    ## Mapeia a porta 3306 do container para porta 3306 da máquina 
+    ## Mapeia a porta 3307 do container para porta 3306 da máquina 
     ports:
       - "3307:3307"
     volumes:
