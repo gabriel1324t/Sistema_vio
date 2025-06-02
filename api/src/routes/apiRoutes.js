@@ -42,6 +42,6 @@ const compraController = require("../controllers/compraController");
 
 //rotas compraController
 router.post("/comprasimples", compraController.registrarCompraSimples);
-router.post("/compra", compraController.registrarCompraSimples)
+router.post("/compra", compraController.registrarCompra)
 
 module.exports = router;
